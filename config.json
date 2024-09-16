@@ -1,0 +1,9 @@
+{
+    "click": "LButton",
+    "clicksPerSecond": 13,
+    "debug": false,
+    "exitHotkey": "#F12",
+    "hotkey": "MButton",
+    "timingDeviationPercentage": "10",
+    "trayIcon": "fire"
+}
