@@ -16,7 +16,8 @@ keyboardId := 1
 mouseId := 12 ; vxe r1
 
 cfg := {
-    wait: {
+    jumpWhilePeek: "up", ; "jump"
+    wait: { ; random waiting settings
         min: 6, ; 165hz = 6ms per frame
         max: 24,
     },
@@ -139,8 +140,10 @@ HandleLeft(dir) {
     if (dir == 1) { ; press
         if (real.%acts.peek% == 1)
             Down(acts.peek)
-        if (real.%acts.peek% == 1 and real.%acts.right% == 0)
+        if (real.%acts.peek% == 1 and real.%acts.right% == 0) {
+            Up(acts.peekright)
             Down(acts.peekleft)
+        }
     }
     if (dir == 0) { ; release
         if isMoving()
@@ -157,8 +160,10 @@ HandleRight(dir) {
     if (dir == 1) { ; press
         if (real.%acts.peek% == 1)
             Down(acts.peek)
-        if (real.%acts.peek% == 1 and real.%acts.left% == 0)
+        if (real.%acts.peek% == 1 and real.%acts.left% == 0) {
+            Up(acts.peekleft)
             Down(acts.peekright)
+        }
     }
     if (dir == 0) { ; release
         if isMoving()
@@ -233,15 +238,15 @@ HandleJump(dir) {
     SetTimestamp(acts.jump)
 
     if (dir == 1) { ; press
-        if (real.%acts.peek% == 0 or
+        if (real.%acts.peek% == 0 and
             real.%acts.ads% == 0)
-            Down(acts.jump)
-        if (real.%acts.peek% == 1)
+            Down(acts.jump) ; no jump while ads'ing or peeking
+        if (cfg.jumpWhilePeek == "up" and real.%acts.peek% == 1)
             Up(acts.crouch)
     }
     if (dir == 0) { ; release
         Up(acts.jump)
-        if (real.%acts.peek% == 1)
+        if (cfg.jumpWhilePeek == "up" and real.%acts.peek% == 1)
             Down(acts.crouch)
     }
 }
@@ -251,7 +256,7 @@ HandleInventory(dir) {
     SetTimestamp(acts.inventory)
 
     ; to prevent aiming
-    if (dir == 0) {  ; release
+    if (dir == 0) { ; release
         s.overlayTick := A_TickCount
         SetTimer HandleOverlayTimeout, cfg.overlayTimeout * -1
     }
