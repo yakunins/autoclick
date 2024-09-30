@@ -8,12 +8,10 @@
 *^Esc:: ExitApp
 AHI := AutoHotInterception() ; https://github.com/evilC/AutoHotInterception
 
-keyboardId := 1
+keyboardId := 5 ; 3
 ; keyboardId := AHI.GetKeyboardId(0x046D, 0xC52B)
-
-;mouseId := AHI.GetMouseId(0x3554, 0xF57C) ; keysona aztec
+mouseId := AHI.GetMouseId(0x3554, 0xF57C) ; keysona aztec
 ; mouseId := AHI.GetMouseId(0x3554, 0xF58E) ; vxe r1
-mouseId := 12 ; vxe r1
 
 cfg := {
     jumpWhilePeek: "up", ; "jump"
@@ -322,6 +320,7 @@ _wheelScrollUp := A_TickCount
 _wheelScrollDown := A_TickCount
 HandleWheel(state) {
     if (state == 1) { ; wheel up
+        real.wheelScrollUp := 1
         SetTimestamp("wheelScrollUp")
         if (sent.%acts.heals% == 1 or isOverlay())
             return
@@ -330,6 +329,7 @@ HandleWheel(state) {
         SetTimer WheelUpKeyUp, cfg.wheelKeypressPeriod * -1
     }
     if (state == -1) { ; wheel down
+        real.wheelScrollDown := 1
         SetTimestamp("wheelScrollDown")
         if (sent.%acts.grenades% == 1 or isOverlay())
             return
@@ -340,12 +340,20 @@ HandleWheel(state) {
 }
 
 WheelUpKeyUp() {
-    if (TimeSince(_wheelScrollUp) > cfg.wheelKeypressPeriod - 10)
+    real.wheelScrollUp := 0
+    if (TimeSince(_wheelScrollUp) > cfg.wheelKeypressPeriod - 10) {
         Up(acts.grenades)
+    } else {
+        SetTimer WheelUpKeyUp, cfg.wheelKeypressPeriod * -1
+    }
 }
 WheelDownKeyUp() {
-    if (TimeSince(_wheelScrollDown) > cfg.wheelKeypressPeriod - 10)
+    real.wheelScrollDown := 0
+    if (TimeSince(_wheelScrollDown) > cfg.wheelKeypressPeriod - 10) {
         Up(acts.heals)
+    } else {
+        SetTimer WheelDownKeyUp, cfg.wheelKeypressPeriod * -1
+    }
 }
 
 ; helpers
