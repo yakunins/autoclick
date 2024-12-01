@@ -8,9 +8,9 @@
 *^Esc:: ExitApp
 AHI := AutoHotInterception() ; https://github.com/evilC/AutoHotInterception
 
-keyboardId := 5 ; 3
+keyboardId := 3 ; 3
 ; keyboardId := AHI.GetKeyboardId(0x046D, 0xC52B)
-mouseId := AHI.GetMouseId(0x3554, 0xF57C) ; keysona aztec
+mouseId := 11 ; AHI.GetMouseId(0x3554, 0xF57C) ; keysona aztec
 ; mouseId := AHI.GetMouseId(0x3554, 0xF58E) ; vxe r1
 
 cfg := {
