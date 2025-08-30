@@ -8,13 +8,13 @@
 *^Esc:: ExitApp
 AHI := AutoHotInterception() ; https://github.com/evilC/AutoHotInterception
 
-keyboardId := 2 ; 5 ; 2
+keyboardId := 1
 ; keyboardId := AHI.GetKeyboardId(0x046D, 0xC52B)
-mouseId := 12 ; 16 ; 12 ; AHI.GetMouseId(0x3554, 0xF57C) ; keysona aztec
+mouseId := 11
 ; mouseId := AHI.GetMouseId(0x3554, 0xF58E) ; vxe r1
 
 cfg := {
-    jumpWhilePeek: "up", ; "jump"
+    jumpWhilePeek: "uncrouch", ; "jump"
     wait: { ; random waiting settings
         min: 6, ; 165hz = 6ms per frame
         max: 24,
@@ -54,7 +54,8 @@ acts := {
     map: "m",
     fire: "LButton",
     ads: "RButton", ; aim down sights
-    aim: "NumpadMult", ; unhandled
+    aim: "q", ; just aim
+    aim2: "NumpadMult",
     grenades: "7", ; unhandled, throwable wheel (to wheel up)
     heals: "8", ; unhandled, healing wheel (to wheel down)
 }
@@ -181,12 +182,12 @@ HandleForward(dir) {
             Up(acts.crouch)
         }
         if (real.%acts.run% == 0 and real.%acts.peek% == 0) {
-            Down(acts.run)
+            Down(acts.run) ; press run key (usually shift)
             return
         }
     }
     if (dir == 0) { ; release
-        Up(acts.run)
+        Up(acts.run) ; release run key (usually shift)
     }
 }
 
@@ -239,12 +240,12 @@ HandleJump(dir) {
         if (real.%acts.peek% == 0 and
             real.%acts.ads% == 0)
             Down(acts.jump) ; no jump while ads'ing or peeking
-        if (cfg.jumpWhilePeek == "up" and real.%acts.peek% == 1)
+        if (cfg.jumpWhilePeek == "uncrouch" and real.%acts.peek% == 1)
             Up(acts.crouch)
     }
     if (dir == 0) { ; release
         Up(acts.jump)
-        if (cfg.jumpWhilePeek == "up" and real.%acts.peek% == 1)
+        if (cfg.jumpWhilePeek == "uncrouch" and real.%acts.peek% == 1)
             Down(acts.crouch)
     }
 }
@@ -357,6 +358,7 @@ WheelDownKeyUp() {
 }
 
 ; helpers
+; emulate key down/press
 Down(key) {
     if (sent.%key% == 1)
         return
@@ -366,6 +368,7 @@ Down(key) {
     sent.%key% := 1
 }
 
+; emulate key up/release
 Up(key) {
     if (sent.%key% == 0)
         return
