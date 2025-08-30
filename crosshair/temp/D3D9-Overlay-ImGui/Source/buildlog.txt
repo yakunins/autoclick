@@ -1,0 +1,1213 @@
+MSBuild version 17.9.5+33de0b227 for .NET Framework
+Build started 8/28/2025 9:27:17 AM.
+Process = "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
+MSBuild executable path = "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
+Command line arguments = "msbuild  "D3D9 Overlay ImGui.sln" /p:Configuration=Release /p:Platform=x64 /v:detailed "
+Current directory = "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source"
+MSBuild version = "17.9.5+33de0b227"
+Some command line switches were read from the auto-response file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.rsp". To disable this file, use the "-noAutoResponse" switch.
+
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\$(MSBuildToolsVersion)\SolutionFile\ImportAfter\* using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild
+Assembly loaded during Evaluation: Microsoft.IO.Redist, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.IO.Redist.dll, MVID: d528d43e-4d35-4c28-8aa6-a5ce49a5eba7, AppDomain: [Default])
+Property reassignment: $(_GenerateRestoreGraphProjectEntryInputProperties)="
+      ExcludeRestorePackageImports=true;
+      _RestoreSolutionFileUsed=true;
+      SolutionDir=C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\;
+      SolutionName=D3D9 Overlay ImGui;
+      SolutionFileName=D3D9 Overlay ImGui.sln;
+      SolutionPath=C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln;
+      SolutionExt=.sln;
+    " (previous value: "ExcludeRestorePackageImports=true") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets (97,5)
+The target "_CheckForInvalidConfigurationAndPlatform" listed in a BeforeTargets attribute at "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets (616,11)" does not exist in the project, and will be ignored.
+Project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln" on node 1 (default targets).
+Target "ValidateSolutionConfiguration" in file "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln.metaproj" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln" (entry point):
+Task "Error" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')) was evaluated as (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{090D4EF2-0230-48D9-AC81-98C3DF9B9DF8}" AbsolutePath="C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" BuildProjectInSolution="True">Release|x64</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' != 'true')).
+Task "Warning" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')) was evaluated as (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{090D4EF2-0230-48D9-AC81-98C3DF9B9DF8}" AbsolutePath="C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" BuildProjectInSolution="True">Release|x64</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' == 'true')).
+Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Message"
+  Building solution configuration "Release|x64".
+Done executing task "Message".
+Done building target "ValidateSolutionConfiguration" in project "D3D9 Overlay ImGui.sln".
+Target "ValidateToolsVersions" in file "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln.metaproj" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln" (entry point):
+Task "Error" skipped, due to false condition; ('$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')) was evaluated as ('Current' == '2.0' and ('' != '2.0' and '' != '')).
+Done building target "ValidateToolsVersions" in project "D3D9 Overlay ImGui.sln".
+Target "ValidateProjects" in file "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln.metaproj" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln" (entry point):
+Done building target "ValidateProjects" in project "D3D9 Overlay ImGui.sln".
+Target "Build" in file "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln.metaproj" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln" (entry point):
+Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MSBuild"
+  Global Properties:
+    BuildingSolutionFile=true
+    CurrentSolutionConfigurationContents=<SolutionConfiguration>
+    <ProjectConfiguration Project="{090D4EF2-0230-48D9-AC81-98C3DF9B9DF8}" AbsolutePath="C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" BuildProjectInSolution="True">Release|x64</ProjectConfiguration>
+  </SolutionConfiguration>
+    SolutionDir=C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\
+    SolutionExt=.sln
+    SolutionFileName=D3D9 Overlay ImGui.sln
+    SolutionName=D3D9 Overlay ImGui
+    SolutionPath=C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln
+  Additional Properties for project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj":
+    Configuration=Release
+    Platform=x64
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.props using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild
+Property reassignment: $(MSBuildProjectExtensionsPath)="C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\obj\" (previous value: "obj\") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Microsoft.Common.props (60,5)
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\* using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild
+The "Configuration" property is a global property, and cannot be modified.
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+The "Configuration" property is a global property, and cannot be modified.
+The "SolutionDir" property is a global property, and cannot be modified.
+Property 'LOCALAPPDATA' with value 'C:\Users\Sergey\AppData\Local' expanded from the environment.
+Property reassignment: $(WholeProgramOptimization)="true" (previous value: "false") at C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj (52,5)
+Property reassignment: $(CharacterSet)="Unicode" (previous value: "NotSet") at C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj (53,5)
+Property 'PROCESSOR_ARCHITECTURE' with value 'x86' expanded from the environment.
+Property reassignment: $(ShortProjectName)="D3D9 Ove.090d4ef2" (previous value: "D3D9 Overlay ImGui") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.MSVC.Toolset.Common.props (27,5)
+Property reassignment: $(NETFXSDK_Version)="4.8" (previous value: "4.8.1") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (46,5)
+Property reassignment: $(NETFXKitsDir)="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (50,5)
+Property reassignment: $(NETFXSDKDir)="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (53,5)
+Property reassignment: $(WindowsSDK_ExecutablePath_x86)="C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools" (previous value: "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (209,5)
+Property reassignment: $(WindowsSDK_ExecutablePath_x64)="C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64" (previous value: "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (210,5)
+Property reassignment: $(TargetExt)=".exe" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (28,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (88,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (89,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (90,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (91,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (92,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (93,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (94,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (95,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (96,5)
+Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostArm64\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x86\1033;;;;;;;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (97,5)
+Property 'COMPUTERNAME' with value 'DESKTOP-CTIMM5M' expanded from the environment.
+Property reassignment: $(RemoteDebuggerDeployCppRuntime)="true" (previous value: "false") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (154,5)
+Property reassignment: $(MultiProcMaxCount)="0" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Common.props (214,5)
+Property reassignment: $(EspXtensions)="EnumIndex.dll;CppCoreCheck.dll;" (previous value: "CppCoreCheck.dll;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CodeAnalysis.Extensions.props (21,5)
+Property reassignment: $(EspXtensions)="HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;" (previous value: "EnumIndex.dll;CppCoreCheck.dll;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CodeAnalysis.Extensions.props (24,5)
+Property reassignment: $(EspXtensions)="VariantClear.dll;HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;" (previous value: "HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CodeAnalysis.Extensions.props (27,5)
+Property reassignment: $(ConcurrencyCheckPath)="\ConcurrencyCheck.dll" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\ConcurrencyCheck.dll") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CodeAnalysis.Extensions.props (33,5)
+Property reassignment: $(EspXtensions)="ConcurrencyCheck.dll;VariantClear.dll;HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;" (previous value: "VariantClear.dll;HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CodeAnalysis.Extensions.props (34,5)
+Property reassignment: $(MsvcAnalysisToolsPath)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Analysis.props (29,5)
+Property reassignment: $(MsvcAnalysisPluginPath)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Analysis.props (33,5)
+Property reassignment: $(_PropertySheetDisplayName)="Unicode Support" (previous value: "Core Windows Libraries") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.unicodesupport.props (15,5)
+Property reassignment: $(_PropertySheetDisplayName)="Application" (previous value: "Unicode Support") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Application.props (15,5)
+Property reassignment: $(_PropertySheetDisplayName)="Whole Program Optimization" (previous value: "Application") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WholeProgramOptimization.props (15,5)
+Property 'Path' with value 'C:\Program Files\ConEmu;C:\Program Files\ConEmu\ConEmu;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Sergey\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Utils;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Utils\openssl\bin;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\CMake\bin;C:\Users\Sergey\AppData\Local\Programs\Python\Python313\;C:\Users\Sergey\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Sergey\AppData\Local\Programs\Python\Launcher\;C:\Users\Sergey\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sergey\AppData\Local\GitHubDesktop\bin;C:\Users\Sergey\.dotnet\tools;C:\Program Files\PhotomatixCL\;C:\Users\Sergey\.bun\bin' expanded from the environment.
+Property 'SystemRoot' with value 'C:\Windows' expanded from the environment.
+The "SolutionExt" property is a global property, and cannot be modified.
+Property reassignment: $(ExtensionsToDeleteOnClean)="*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\D3D9 Overlay ImGui.exe.manifest;C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\D3D9 Overlay ImGui.tlb;C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\D3D9 Overlay ImGui.pdb;C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\D3D9 Overlay ImGui.exe;C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\D3D9 Overlay ImGui.bsc;C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\D3D9 Overlay ImGui.ilk;C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\D3D9 Overlay ImGui.exe.intermediate.manifest;x64\Release\D3D9 Overlay ImGui.vcxproj.FileListAbsolute.txt" (previous value: "*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (40,5)
+Property reassignment: $(DebugType)="none" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (32,5)
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+The "Configuration" property is a global property, and cannot be modified.
+Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (185,5)
+The "SolutionName" property is a global property, and cannot be modified.
+The "SolutionFileName" property is a global property, and cannot be modified.
+The "SolutionPath" property is a global property, and cannot be modified.
+The "SolutionDir" property is a global property, and cannot be modified.
+The "SolutionExt" property is a global property, and cannot be modified.
+Property reassignment: $(AutoUnifyAssemblyReferences)="false" (previous value: "true") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (369,5)
+Property reassignment: $(MSBuildCopyMarkerName)="D3D9 Ove.DA56C6E2" (previous value: "D3D9 Overlay ImGui.vcxproj") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (392,5)
+Property reassignment: $(MSBuildCopyMarkerName)="D3D9 Ove.DA56C6E2.Up2Date" (previous value: "D3D9 Ove.DA56C6E2") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (393,5)
+Property reassignment: $(ProcessorArchitecture)="amd64" (previous value: "x64") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (523,5)
+Property 'MSBuildExtensionsPath64' with value 'C:\Program Files\MSBuild' expanded from the environment.
+Property reassignment: $(DelaySign)="" (previous value: "false") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (575,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;" (previous value: "{CandidateAssemblyFiles}") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (644,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (645,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem}") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (646,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};" (previous value: "{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory}") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (647,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx}" (previous value: "{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (648,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders}" (previous value: "{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx}") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (649,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (previous value: "{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders}") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (650,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (previous value: "{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC}") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (651,5)
+Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\" (previous value: "{CandidateAssemblyFiles};C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (652,5)
+Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (3865,5)
+Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+      AssignProjectConfiguration;
+      _SplitProjectReferencesByFileExistence
+    " (previous value: "_SplitProjectReferencesByFileExistence") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (5032,5)
+Property reassignment: $(_CodeAnalysisTreatWarningsAsErrors)="false" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (125,5)
+Property reassignment: $(CAExcludePath)="C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;" (previous value: "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (239,5)
+Property reassignment: $(CAExcludePath)="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;" (previous value: "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (240,5)
+Property reassignment: $(PrepareForBuildDependsOn)=";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables" (previous value: ";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (244,5)
+Property reassignment: $(PrepareResourcesDependsOn)="
+      XamlMarkupCompilePass1;
+      XamlMarkupCompilePass2;
+      
+      ;
+      PrepareResourceNames;
+      ResGen;
+      CompileLicxFiles
+     
+    " (previous value: "
+      ;
+      PrepareResourceNames;
+      ResGen;
+      CompileLicxFiles
+    ") at C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets (35,5)
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.targets\ImportAfter\* using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Sdks\Microsoft.Docker.Sdk\build\Microsoft.Docker.targets using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild
+Property reassignment: $(ProjectLockFile)="obj\project.assets.json" (previous value: "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\obj\project.assets.json") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\NuGet\17.0\Microsoft.NuGet.targets (74,5)
+Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+      ResolveProjectReferences;
+      FindInvalidProjectReferences;
+      GetFrameworkPaths;
+      GetReferenceAssemblyPaths;
+      PrepareForBuild;
+      ResolveSDKReferences;
+      ExpandSDKReferences;
+    ;ResolveNuGetPackageAssets" (previous value: "
+      ResolveProjectReferences;
+      FindInvalidProjectReferences;
+      GetFrameworkPaths;
+      GetReferenceAssemblyPaths;
+      PrepareForBuild;
+      ResolveSDKReferences;
+      ExpandSDKReferences;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\NuGet\17.0\Microsoft.NuGet.targets (185,5)
+Property reassignment: $(PrepareResourcesDependsOn)="ResolveNuGetPackageAssets;
+      XamlMarkupCompilePass1;
+      XamlMarkupCompilePass2;
+      
+      ;
+      PrepareResourceNames;
+      ResGen;
+      CompileLicxFiles
+     
+    " (previous value: "
+      XamlMarkupCompilePass1;
+      XamlMarkupCompilePass2;
+      
+      ;
+      PrepareResourceNames;
+      ResGen;
+      CompileLicxFiles
+     
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\NuGet\17.0\Microsoft.NuGet.targets (186,5)
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild
+Property reassignment: $(JsonSchemaCombinedFilePath)="C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\x64\Release\CombinedComponentSchema.json" (previous value: "x64\Release\\CombinedComponentSchema.json") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (25,5)
+Property reassignment: $(AppSettingsJsonSchemaCombinedFilePath)="C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\x64\Release\AppSettingsSchema.json" (previous value: "x64\Release\\AppSettingsSchema.json") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (27,5)
+Property reassignment: $(DebugType)="" (previous value: "none") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (39,5)
+Property reassignment: $(BuildDependsOn)="
+      _PrepareForBuild;
+      
+      ResolveReferences;
+      PrepareForBuild;
+      InitializeBuildStatus;
+      BuildGenerateSources;
+      BuildCompile;
+      BuildLink;
+    ;
+      AfterBuild;
+      IncrementalClean;
+      TlogCleanup;
+      FinalizeBuildStatus;
+    " (previous value: "
+      BeforeBuild;
+      CoreBuild;
+      AfterBuild
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (122,5)
+Property reassignment: $(RebuildDependsOn)="
+      _PrepareForRebuild;
+      
+      BeforeRebuild;
+      Clean;
+      Build;
+      AfterRebuild;
+    ;
+    " (previous value: "
+      BeforeRebuild;
+      Clean;
+      Build;
+      AfterRebuild;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (131,5)
+Property reassignment: $(CleanDependsOn)="
+      _PrepareForClean;
+      
+      BeforeClean;
+      UnmanagedUnregistration;
+      CoreClean;
+      CleanReferencedProjects;
+      CleanPublishFolder;
+      AfterClean
+    ;
+    " (previous value: "
+      BeforeClean;
+      UnmanagedUnregistration;
+      CoreClean;
+      CleanReferencedProjects;
+      CleanPublishFolder;
+      AfterClean
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (136,5)
+Property reassignment: $(_TLogProjectName)="D3D9 Ove.090d4ef2" (previous value: "D3D9 Overlay ImGui") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (218,5)
+Property reassignment: $(BeforeBuildGenerateSourcesTargets)="
+      
+      ;
+      BeforeBuildGenerateSources;
+    ;
+    " (previous value: "
+      ;
+      BeforeBuildGenerateSources;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (60,5)
+Property reassignment: $(AfterBuildGenerateSourcesTargets)="
+      
+      ;
+      AfterBuildGenerateSources;
+    ;
+      AfterBuildGenerateSourcesEvent;
+    " (previous value: "
+      ;
+      AfterBuildGenerateSources;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (71,5)
+Property reassignment: $(BuildGenerateSourcesAction)="_BuildGenerateSourcesAction" (previous value: "Build") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (140,5)
+Property reassignment: $(BuildCompileAction)="_BuildCompileAction" (previous value: "Build") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (141,5)
+Property reassignment: $(BuildLinkAction)="_BuildLinkAction" (previous value: "Build") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (142,5)
+Property reassignment: $(DetermineProjectTypeTargets)="_PrepareForReferenceResolution;
+      ;
+      AddExternalIncludDirectoriesToPaths
+    " (previous value: "
+      ;
+      AddExternalIncludDirectoriesToPaths
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (249,5)
+Property reassignment: $(ResolveReferencesDependsOn)="_PrepareForReferenceResolution;ComputeCrtSDKReference;
+      BeforeResolveReferences;
+      AssignProjectConfiguration;
+      ResolveProjectReferences;
+      FindInvalidProjectReferences;
+      ResolveNativeReferences;
+      ResolveAssemblyReferences;
+      GenerateBindingRedirects;
+      GenerateBindingRedirectsUpdateAppConfig;
+      ResolveComReferences;
+      AfterResolveReferences
+    " (previous value: "
+      BeforeResolveReferences;
+      AssignProjectConfiguration;
+      ResolveProjectReferences;
+      FindInvalidProjectReferences;
+      ResolveNativeReferences;
+      ResolveAssemblyReferences;
+      GenerateBindingRedirects;
+      GenerateBindingRedirectsUpdateAppConfig;
+      ResolveComReferences;
+      AfterResolveReferences
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (311,5)
+Property reassignment: $(ResolveAssemblyReferencesDependsOn)="_PrepareForReferenceResolution;
+      ResolveProjectReferences;
+      FindInvalidProjectReferences;
+      GetFrameworkPaths;
+      GetReferenceAssemblyPaths;
+      PrepareForBuild;
+      ResolveSDKReferences;
+      ExpandSDKReferences;
+    ;ResolveNuGetPackageAssets" (previous value: "
+      ResolveProjectReferences;
+      FindInvalidProjectReferences;
+      GetFrameworkPaths;
+      GetReferenceAssemblyPaths;
+      PrepareForBuild;
+      ResolveSDKReferences;
+      ExpandSDKReferences;
+    ;ResolveNuGetPackageAssets") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (312,5)
+Property reassignment: $(ResolveSDKReferencesDependsOn)="_PrepareForReferenceResolution;ComputeCrtSDKReference;
+      GetInstalledSDKLocations
+    " (previous value: "
+      GetInstalledSDKLocations
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (313,5)
+Property reassignment: $(ComputeCompileInputsTargets)="
+      
+      ;
+      GenerateTargetFrameworkMonikerAttribute;
+    ;
+      ComputeMIDLGeneratedCompileInputs;
+    " (previous value: "
+      ;
+      GenerateTargetFrameworkMonikerAttribute;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (639,5)
+Property reassignment: $(ComputeLinkInputsTargets)="
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    " (previous value: "
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (952,5)
+Property reassignment: $(GetTargetPathDependsOn)="_PrepareForReferenceResolution;GetResolvedWinMD;" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1123,5)
+Property reassignment: $(ComputeCompileInputsTargets)="
+      
+      
+      ;
+      GenerateTargetFrameworkMonikerAttribute;
+    ;
+      ComputeMIDLGeneratedCompileInputs;
+    ;
+      ComputeCLInputPDBName;
+      ComputeReferenceCLInput;
+      WarnCompileDuplicatedFilename
+    " (previous value: "
+      
+      ;
+      GenerateTargetFrameworkMonikerAttribute;
+    ;
+      ComputeMIDLGeneratedCompileInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1149,5)
+Property reassignment: $(ComputeLinkInputsTargets)="
+      
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    ;
+      ComputeCustomBuildOutput;
+    " (previous value: "
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1201,5)
+Property reassignment: $(ComputeLibInputsTargets)="
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    " (previous value: "
+      ;
+      ComputeRCGeneratedLibInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1208,5)
+Property reassignment: $(ComputeImpLibInputsTargets)="
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeRCGeneratedImpLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    " (previous value: "
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeRCGeneratedImpLibInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1215,5)
+Property reassignment: $(ComputeLinkInputsTargets)="
+      
+      
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLinkInputs;
+    " (previous value: "
+      
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1276,5)
+Property reassignment: $(ComputeLibInputsTargets)="
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLibInputs;
+    " (previous value: "
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1291,5)
+Property reassignment: $(ComputeImpLibInputsTargets)="
+      
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeRCGeneratedImpLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedImpLibInputs;
+    " (previous value: "
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeRCGeneratedImpLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1306,5)
+Property reassignment: $(ComputeLinkInputsTargets)="
+      
+      
+      
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLinkInputs;
+    ;
+      ComputeLinkInputsFromProject;
+    " (previous value: "
+      
+      
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLinkInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1337,5)
+Property reassignment: $(ComputeLibInputsTargets)="
+      
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLibInputs;
+    ;
+      ComputeLibInputsFromProject;
+    " (previous value: "
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLibInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1355,5)
+Property reassignment: $(ComputeImpLibInputsTargets)="
+      
+      
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeRCGeneratedImpLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedImpLibInputs;
+    ;
+      ComputeImpLibInputsFromProject;
+    " (previous value: "
+      
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeRCGeneratedImpLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedImpLibInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1373,5)
+Property reassignment: $(ComputeLinkInputsTargets)="
+      
+      
+      
+      
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLinkInputs;
+    ;
+      ComputeLinkInputsFromProject;
+    ;
+      ComputeReferenceLinkInputs;
+    " (previous value: "
+      
+      
+      
+      
+      ;
+      ComputeRCGeneratedLinkInputs;
+    ;
+      ComputeManifestGeneratedLinkerInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLinkInputs;
+    ;
+      ComputeLinkInputsFromProject;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1497,5)
+Property reassignment: $(ComputeLibInputsTargets)="
+      
+      
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLibInputs;
+    ;
+      ComputeLibInputsFromProject;
+    ;
+      ComputeReferenceLibInputs;
+    " (previous value: "
+      
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLibInputs;
+    ;
+      ComputeLibInputsFromProject;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1535,5)
+Property reassignment: $(ComputeLibInputsTargets)="
+      ComputeLibAdditionalOptions;
+      
+      
+      
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLibInputs;
+    ;
+      ComputeLibInputsFromProject;
+    ;
+      ComputeReferenceLibInputs;
+    
+    " (previous value: "
+      
+      
+      
+      
+      ;
+      ComputeRCGeneratedLibInputs;
+    ;
+      ComputeCustomBuildOutput;
+    ;
+      ComputeCLGeneratedLibInputs;
+    ;
+      ComputeLibInputsFromProject;
+    ;
+      ComputeReferenceLibInputs;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1592,5)
+Property reassignment: $(GetProjectInfoForReferenceDependsOn)="
+      
+      ;
+      AddPublicIncludeDirectoriesToProjectsInfoForReference;
+    ;
+      AddPublicBMIsToProjectsInfoForReference;
+      AddDeployRecipeFileToProjectsInfoForReference;
+      AddLibrariesToProjectsInfoForReference;
+    " (previous value: "
+      ;
+      AddPublicIncludeDirectoriesToProjectsInfoForReference;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (1780,5)
+Property reassignment: $(DocumentationProjectOutputGroupDependsOn)="ResolvedXDCMake;ComputeCLCompileGeneratedXDCFiles" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (2180,5)
+Property reassignment: $(ContentFilesProjectOutputGroupDependsOn)="PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc" (previous value: "PrepareForBuild;AssignTargetPaths") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets (2246,5)
+Property reassignment: $(ComputeCompileInputsTargets)="
+      
+      
+      
+      ;
+      GenerateTargetFrameworkMonikerAttribute;
+    ;
+      ComputeMIDLGeneratedCompileInputs;
+    ;
+      ComputeCLInputPDBName;
+      ComputeReferenceCLInput;
+      WarnCompileDuplicatedFilename
+    ;
+      ;
+      ComputeStdModulesCompileInputs;
+      FixupCLCompileOptions;
+    " (previous value: "
+      
+      
+      ;
+      GenerateTargetFrameworkMonikerAttribute;
+    ;
+      ComputeMIDLGeneratedCompileInputs;
+    ;
+      ComputeCLInputPDBName;
+      ComputeReferenceCLInput;
+      WarnCompileDuplicatedFilename
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (315,5)
+Property reassignment: $(BuildingProject)="true" (previous value: "false") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (2075,5)
+Property reassignment: $(ContentFilesProjectOutputGroupDependsOn)="PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc;_CreateCopyFileItems;" (previous value: "PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (2621,5)
+Property reassignment: $(PrepareForBuildDependsOn)="_CheckWindowsSDKInstalled;;GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables" (previous value: ";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets (16,5)
+Property reassignment: $(CleanDependsOn)="
+      
+      _PrepareForClean;
+      
+      BeforeClean;
+      UnmanagedUnregistration;
+      CoreClean;
+      CleanReferencedProjects;
+      CleanPublishFolder;
+      AfterClean
+    ;
+    ;
+      CppClean
+    " (previous value: "
+      _PrepareForClean;
+      
+      BeforeClean;
+      UnmanagedUnregistration;
+      CoreClean;
+      CleanReferencedProjects;
+      CleanPublishFolder;
+      AfterClean
+    ;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets (22,5)
+Property reassignment: $(CppCleanDependsOn)="
+      BeforeCppClean;
+      ;
+      CoreCppClean;
+      AfterCppClean;
+    ;PGInstrumentedClean" (previous value: "
+      BeforeCppClean;
+      ;
+      CoreCppClean;
+      AfterCppClean;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets (92,5)
+Property reassignment: $(BuildDependsOn)="SetTelemetryEnvironmentVariables;
+      _PrepareForBuild;
+      
+      ResolveReferences;
+      PrepareForBuild;
+      InitializeBuildStatus;
+      BuildGenerateSources;
+      BuildCompile;
+      BuildLink;
+    ;
+      AfterBuild;
+      IncrementalClean;
+      TlogCleanup;
+      FinalizeBuildStatus;
+    " (previous value: "
+      _PrepareForBuild;
+      
+      ResolveReferences;
+      PrepareForBuild;
+      InitializeBuildStatus;
+      BuildGenerateSources;
+      BuildCompile;
+      BuildLink;
+    ;
+      AfterBuild;
+      IncrementalClean;
+      TlogCleanup;
+      FinalizeBuildStatus;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets (539,5)
+Property reassignment: $(RebuildDependsOn)="SetTelemetryEnvironmentVariables;
+      _PrepareForRebuild;
+      
+      BeforeRebuild;
+      Clean;
+      Build;
+      AfterRebuild;
+    ;
+    " (previous value: "
+      _PrepareForRebuild;
+      
+      BeforeRebuild;
+      Clean;
+      Build;
+      AfterRebuild;
+    ;
+    ") at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets (540,5)
+Overriding target "GenerateTargetFrameworkMonikerAttribute" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GenerateTargetFrameworkMonikerAttribute" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
+Overriding target "Build" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "Build" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
+Overriding target "Rebuild" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "Rebuild" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
+Overriding target "AfterBuild" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "AfterBuild" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
+Overriding target "PrepareForBuild" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "PrepareForBuild" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "GetTargetPath" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPath" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "ComputeIntermediateSatelliteAssemblies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "ComputeIntermediateSatelliteAssemblies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "ClCompile" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ClCompile" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "ResourceCompile" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ResourceCompile" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "Lib" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Lib" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "Link" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Link" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "AllProjectOutputGroups" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "AllProjectOutputGroups" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "BuiltProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "BuiltProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "DebugSymbolsProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "DebugSymbolsProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "DocumentationProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "DocumentationProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "SourceFilesProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "SourceFilesProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "ContentFilesProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "ContentFilesProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "AllProjectOutputGroupsDependencies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "AllProjectOutputGroupsDependencies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "BuiltProjectOutputGroupDependencies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "BuiltProjectOutputGroupDependencies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "DebugSymbolsProjectOutputGroupDependencies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "DebugSymbolsProjectOutputGroupDependencies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "DocumentationProjectOutputGroupDependencies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "DocumentationProjectOutputGroupDependencies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets".
+Overriding target "PreBuildEvent" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "PreBuildEvent" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "PostBuildEvent" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "PostBuildEvent" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "ClCompile" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ClCompile" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "Link" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Link" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "Lib" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Lib" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "ImpLib" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ImpLib" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "Midl" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Midl" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "ResourceCompile" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "ResourceCompile" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "BeforeResGen" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "BeforeResGen" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "ResGen" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "ResGen" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "GenerateSatelliteAssemblies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GenerateSatelliteAssemblies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "Manifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "Manifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "XdcMake" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "XdcMake" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "BscMake" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" with target "BscMake" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "ComputeMetaGenInputs" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.MetaGen.targets" with target "ComputeMetaGenInputs" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
+Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
+The target "CompileDesignTime" listed in a BeforeTargets attribute at "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
+The target "CompileDesignTime" listed in a BeforeTargets attribute at "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
+Project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln" (1) is building "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (2) on node 1 (default targets).
+Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
+Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
+Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Message"
+  Configuration=Release
+Done executing task "Message".
+Task "Message"
+  Platform=x64
+Done executing task "Message".
+Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\' != '' and !HasTrailingSlash('C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\x64\Release\')).
+Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('x64\Release\' != '' and !HasTrailingSlash('x64\Release\')).
+Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+Task "Error" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( 'C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\obj\' != '' And 'C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\obj\' != 'C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\obj\' ).
+Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\obj\' ).
+Done building target "_CheckForInvalidConfigurationAndPlatform" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "Build" depends on it):
+Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+Task "SetEnv"
+  VSTEL_SolutionSessionID=
+Done executing task "SetEnv".
+Task "SetEnv"
+  VSTEL_CurrentSolutionBuildID=
+Done executing task "SetEnv".
+Task "SetEnv"
+  VSTEL_SolutionPath=C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln
+Done executing task "SetEnv".
+Task "SetEnv"
+  VSTEL_ProjectID={090d4ef2-0230-48d9-ac81-98c3df9b9df8}
+Done executing task "SetEnv".
+Done building target "SetTelemetryEnvironmentVariables" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "Build" depends on it):
+Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
+Done building target "_PrepareForBuild" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveReferences" depends on it):
+Task "VCMessage" skipped, due to false condition; ('$(WarnAboutIndividualManagedFiles)' == 'true') was evaluated as ('' == 'true').
+Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+Done building target "_PrepareForReferenceResolution" in project "D3D9 Overlay ImGui.vcxproj".
+Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Drawing.cpp;ImGui\imgui.cpp;ImGui\imgui_demo.cpp;...'!='' and 'false'=='true' and '' != 'false').
+Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveReferences" depends on it):
+Done building target "BeforeResolveReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "IgnoreJavaScriptOutputAssembly" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "AssignProjectConfiguration" depends on it):
+Done building target "IgnoreJavaScriptOutputAssembly" in project "D3D9 Overlay ImGui.vcxproj".
+Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveReferences" depends on it):
+Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignProjectConfiguration"
+Done executing task "AssignProjectConfiguration".
+Done building target "AssignProjectConfiguration" in project "D3D9 Overlay ImGui.vcxproj".
+Target "AssignProjectConfiguration" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "PrepareProjectReferences" depends on it):
+Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as (''=='true' and ''!='').
+Done building target "_SplitProjectReferencesByFileExistence" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_AddOutputPathToGlobalPropertiesToRemove" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_GetProjectReferenceTargetFrameworkProperties" depends on it):
+Done building target "_AddOutputPathToGlobalPropertiesToRemove" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "PrepareProjectReferences" depends on it):
+Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MSBuild"
+Done executing task "MSBuild".
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.SkipGetTargetFrameworkProperties)' != 'true' and '$(EnableDynamicPlatformResolution)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
+Task "GetReferenceNearestTargetFrameworkTask" skipped, due to false condition; ('@(_ProjectReferenceTargetFrameworkPossibilities)' != '' and '$(ReferringTargetFrameworkForProjectReferences)' != ''
+                                                        And '$(GetReferenceNearestTargetFrameworkTaskSupportsTargetPlatformParameter)' == 'true' and '%(_ProjectReferenceTargetFrameworkPossibilities.IsVcxOrNativeProj)' != 'true') was evaluated as ('' != '' and '' != ''
+                                                        And 'true' == 'true' and '' != 'true').
+Task "GetReferenceNearestTargetFrameworkTask" skipped, due to false condition; ('@(_ProjectReferenceTargetFrameworkPossibilities)' != '' and '$(ReferringTargetFrameworkForProjectReferences)' != ''
+                                                        And '$(GetReferenceNearestTargetFrameworkTaskSupportsTargetPlatformParameter)' != 'true' and '%(_ProjectReferenceTargetFrameworkPossibilities.IsVcxOrNativeProj)' != 'true') was evaluated as ('' != '' and '' != ''
+                                                        And 'true' != 'true' and '' != 'true').
+Using "SetRidAgnosticValueForProjects" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "SetRidAgnosticValueForProjects"
+Done executing task "SetRidAgnosticValueForProjects".
+Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_GetProjectReferencePlatformProperties" skipped, due to false condition; ('$(EnableDynamicPlatformResolution)' == 'true'
+                     and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true'
+                     and '' != '').
+Target "PrepareProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveProjectReferences" depends on it):
+Done building target "PrepareProjectReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+Target "ResolveProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveReferences" depends on it):
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '17.0' != '10.0' and '' != '').
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and '' != 'true' and 'true' == 'true' and '' != '').
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
+Done building target "ResolveProjectReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+Target "ResolveProjectReferences" skipped. Previously built successfully.
+Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+Target "GetFrameworkPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+Done building target "GetFrameworkPaths" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+Target "GetFrameworkPaths" skipped. Previously built successfully.
+Target "GetReferenceAssemblyPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('' == '' or '' == '')).
+Done building target "GetReferenceAssemblyPaths" in project "D3D9 Overlay ImGui.vcxproj".
+Target "AddExternalIncludDirectoriesToPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
+Done building target "AddExternalIncludDirectoriesToPaths" in project "D3D9 Overlay ImGui.vcxproj".
+Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "PrepareForBuild" depends on it):
+Task "SetEnv"
+  PATH=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\ConEmu;C:\Program Files\ConEmu\ConEmu;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Sergey\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Utils;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Utils\openssl\bin;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\CMake\bin;C:\Users\Sergey\AppData\Local\Programs\Python\Python313\;C:\Users\Sergey\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Sergey\AppData\Local\Programs\Python\Launcher\;C:\Users\Sergey\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sergey\AppData\Local\GitHubDesktop\bin;C:\Users\Sergey\.dotnet\tools;C:\Program Files\PhotomatixCL\;C:\Users\Sergey\.bun\bin;
+Done executing task "SetEnv".
+Task "SetEnv"
+  LIB=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64;
+Done executing task "SetEnv".
+Task "SetEnv"
+  LIBPATH=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\x64;
+Done executing task "SetEnv".
+Task "SetEnv"
+  INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\include;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+Done executing task "SetEnv".
+Task "SetEnv"
+  EXTERNAL_INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\include;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+Done executing task "SetEnv".
+Task "SetEnv"
+  VSTEL_MSBuildProjectFullPath=C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj
+Done executing task "SetEnv".
+Done building target "SetBuildDefaultEnvironmentVariables" in project "D3D9 Overlay ImGui.vcxproj".
+Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+Target "GetResolvedWinMD" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "PrepareForBuild" depends on it):
+Done building target "GetResolvedWinMD" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_CheckWindowsSDKInstalled" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "PrepareForBuild" depends on it):
+Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKInstalled)' != 'true') was evaluated as ('true' != 'true').
+Task "VCMessage" skipped, due to false condition; ('$(WindowsAppContainer)' != 'true' and '$(WindowsSDK_Desktop_Support)' != true) was evaluated as ('false' != 'true' and 'true' != true).
+Done building target "_CheckWindowsSDKInstalled" in project "D3D9 Overlay ImGui.vcxproj".
+Target "GetFrameworkPaths" skipped. Previously built successfully.
+Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
+Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "PrepareForBuild" depends on it):
+Task "SetEnv"
+  CAExcludePath=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+Done executing task "SetEnv".
+Task "SetEnv" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(VCCodeAnalysisUX)'=='true') was evaluated as ('false'=='true' and ''=='true').
+Done building target "SetCABuildNativeEnvironmentVariables" in project "D3D9 Overlay ImGui.vcxproj".
+Target "PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
+Task "VCMessage" skipped, due to false condition; ('$(ApplicationType)' == '' and '$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' == '' and '' != 'true' and 'true' != 'true').
+Task "VCMessage" skipped, due to false condition; ('$(ApplicationType)' != '' and '$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' != '' and '' != 'true' and 'true' != 'true').
+Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MakeDir"
+Done executing task "MakeDir".
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'Application'!='Application' and 'Application'!='DynamicLibrary' and 'Application'!='StaticLibrary').
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true' and ('$(TargetFrameworkVersion)'=='v3.5' or '$(TargetFrameworkVersion)'=='v3.0' or '$(TargetFrameworkVersion)'=='v2.0' )) was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\'=='' and '' != 'true' and (''=='v3.5' or ''=='v3.0' or ''=='v2.0' )).
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true' and '$(PlatformToolset)'=='v90') was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\'=='' and '' != 'true' and 'v143'=='v90').
+Using "CheckVCToolsetVersion" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+Task "CheckVCToolsetVersion"
+Done executing task "CheckVCToolsetVersion".
+Task "VCMessage" skipped, due to false condition; ('$(CheckMFCInstalled)' == 'true' and !Exists($(MFC_KeyFile)) and '$(SpectreLibs)' == '') was evaluated as ('' == 'true' and !Exists(C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64\mfcs140.lib) and '' == '').
+Task "VCMessage" skipped, due to false condition; ('$(CheckMFCInstalled)' == 'true' and !Exists($(MFC_KeyFile)) and '$(SpectreLibs)' != '') was evaluated as ('' == 'true' and !Exists(C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64\mfcs140.lib) and '' != '').
+Task "VCMessage" skipped, due to false condition; ('$(CheckATLInstalled)' == 'true' and !Exists($(ATL_KeyFile)) and '$(SpectreLibs)' == '') was evaluated as ('' == 'true' and !Exists(C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64\atls.lib) and '' == '').
+Task "VCMessage" skipped, due to false condition; ('$(CheckATLInstalled)' == 'true' and !Exists($(ATL_KeyFile)) and '$(SpectreLibs)' != '') was evaluated as ('' == 'true' and !Exists(C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\atlmfc\lib\x64\atls.lib) and '' != '').
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and
+                                                        '$(CheckMSVCComponents)'=='true' and
+                                                        '$(SpectreMitigation)' != '' and
+                                                        '$(SpectreMitigation)' != 'false' and
+                                                        (('$(VC_Target_Library_Platform)' == 'OneCore' and !Exists('$(VC_LibraryPath_VC_OneCore_CurrentPlatform_spectre)')) or
+                                                         ('$(VC_Target_Library_Platform)' == 'Desktop' and !Exists('$(VC_LibraryPath_VC_Desktop_CurrentPlatform_spectre)')))) was evaluated as ('' != 'true' and
+                                                        'true'=='true' and
+                                                        'false' != '' and
+                                                        'false' != 'false' and
+                                                        (('Desktop' == 'OneCore' and !Exists('C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\spectre\onecore\x64')) or
+                                                         ('Desktop' == 'Desktop' and !Exists('C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\lib\spectre\x64')))).
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true'  and '$(CheckMSVCComponents)'=='true') was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\'=='' and '' != 'true'  and 'true'=='true').
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsSDKDir)'=='' and '$(UseEnv)' != 'true') was evaluated as (''!='true' and 'C:\Program Files (x86)\Windows Kits\10\'=='' and '' != 'true').
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(IntDirTrailingSlashWarning)'=='true') was evaluated as (''!='true' and ''=='true').
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(OutDirTrailingSlashWarning)'=='true') was evaluated as (''!='true' and ''=='true').
+Task "VCMessage" skipped, due to false condition; ('%(CompatibilityIssues.Identity)' != '' and '$(DesignTimeBuild)'!='true') was evaluated as ('' != '' and ''!='true').
+Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirSharingDetected)' != 'true' and '$(IntDirSharingDetected)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
+Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(IgnoreWarnIntDirInTempDetected)' != 'true' and ('$(IntDirFullPath.StartsWith($(_Tmp), true, null))' == 'true' or '$(IntDirFullPath.StartsWith($(_Temp), true, null))' == 'true' or '$(OutDirFullPath.StartsWith($(_Tmp), true, null))' == 'true' or '$(OutDirFullPath.StartsWith($(_Temp), true, null))' == 'true')) was evaluated as (''!='true' and '' != 'true' and ('False' == 'true' or 'False' == 'true' or 'False' == 'true' or 'False' == 'true')).
+Using "VCMessage" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+Task "VCMessage"
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+Done executing task "VCMessage".
+Task "MakeDir"
+Done executing task "MakeDir".
+Done building target "PrepareForBuild" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Drawing.cpp;ImGui\imgui.cpp;ImGui\imgui_demo.cpp;...'!='' and 'false'=='true' and '' != 'false').
+Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+Target "ResolveSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+Done building target "ResolveSDKReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "ResolveSDKReferences" skipped. Previously built successfully.
+Target "ExpandSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+Done building target "ExpandSDKReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('obj\project.assets.json')).
+Target "ResolveAssemblyReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveReferences" depends on it):
+Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
+Done building target "ResolveAssemblyReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and '@(SuggestedBindingRedirects)' != '' and '$(DesignTimeBuild)' != 'true' and '$(BuildingProject)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true' and '' != '' and '' != 'true' and 'true' == 'true').
+Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true').
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "AfterResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ResolveReferences" depends on it):
+Done building target "AfterResolveReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "ResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "Build" depends on it):
+Done building target "ResolveReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "InitializeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "Build" depends on it):
+Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ReadLinesFromFile"
+Done executing task "ReadLinesFromFile".
+Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "WriteLinesToFile"
+Done executing task "WriteLinesToFile".
+Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Touch"
+  Touching "x64\Release\D3D9 Ove.090d4ef2.tlog\unsuccessfulbuild".
+Done executing task "Touch".
+Done building target "InitializeBuildStatus" in project "D3D9 Overlay ImGui.vcxproj".
+Target "PrepareProjectReferences" skipped. Previously built successfully.
+Target "BuildGenerateSourcesTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "BuildGenerateSources" depends on it):
+Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
+Done building target "BuildGenerateSourcesTraverse" in project "D3D9 Overlay ImGui.vcxproj".
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "ResolveReferences" skipped. Previously built successfully.
+Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+Done building target "BeforeBuildGenerateSources" in project "D3D9 Overlay ImGui.vcxproj".
+Target "PreBuildEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
+Done building target "PreBuildEvent" in project "D3D9 Overlay ImGui.vcxproj".
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "InitializeBuildStatus" skipped. Previously built successfully.
+Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
+Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+Target "_SelectedFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "SelectCustomBuild" depends on it):
+Done building target "_SelectedFiles" in project "D3D9 Overlay ImGui.vcxproj".
+Target "SelectCustomBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "CustomBuild" depends on it):
+Done building target "SelectCustomBuild" in project "D3D9 Overlay ImGui.vcxproj".
+Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "CustomBuild" depends on it):
+Task "CreateItem" skipped, due to false condition; ('%(CustomBuildOutputs.OutputItemType)'!='') was evaluated as (''!='').
+Task "MakeDir"
+Done executing task "MakeDir".
+Done building target "ComputeCustomBuildOutput" in project "D3D9 Overlay ImGui.vcxproj".
+Target "CustomBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+Using "GetOutOfDateItems" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+Task "GetOutOfDateItems"
+Done executing task "GetOutOfDateItems".
+Task "GetOutOfDateItems"
+Done executing task "GetOutOfDateItems".
+Task "ParallelCustomBuild" skipped, due to false condition; ('@(_ParallelCustomBuild)' != '') was evaluated as ('' != '').
+Task "CustomBuild" skipped, due to false condition; ('@(_CustomBuild)' != '') was evaluated as ('' != '').
+Done building target "CustomBuild" in project "D3D9 Overlay ImGui.vcxproj".
+Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
+Target "_SelectedFiles" skipped. Previously built successfully.
+Target "CopyFileToFolders" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+Task "GetOutOfDateItems"
+Done executing task "GetOutOfDateItems".
+Task "Copy" skipped, due to false condition; ('@(_OutOfDateCopyFile)' != '') was evaluated as ('' != '').
+Done building target "CopyFileToFolders" in project "D3D9 Overlay ImGui.vcxproj".
+Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
+Target "_Xsd" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+Done building target "_Xsd" in project "D3D9 Overlay ImGui.vcxproj".
+Target "MakeDirsForMidl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_Midl" depends on it):
+Task "Makedir"
+Done executing task "Makedir".
+Done building target "MakeDirsForMidl" in project "D3D9 Overlay ImGui.vcxproj".
+Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
+Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_Midl" depends on it):
+Done building target "ComputeMIDLGeneratedCompileInputs" in project "D3D9 Overlay ImGui.vcxproj".
+Target "AfterMidl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_Midl" depends on it):
+Done building target "AfterMidl" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_Midl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+Done building target "_Midl" in project "D3D9 Overlay ImGui.vcxproj".
+Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+Done building target "AfterBuildGenerateSources" in project "D3D9 Overlay ImGui.vcxproj".
+Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+Done building target "AfterBuildGenerateSourcesEvent" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "BuildGenerateSources" depends on it):
+Done building target "_BuildGenerateSourcesAction" in project "D3D9 Overlay ImGui.vcxproj".
+Target "BuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "Build" depends on it):
+Done building target "BuildGenerateSources" in project "D3D9 Overlay ImGui.vcxproj".
+Target "PrepareProjectReferences" skipped. Previously built successfully.
+Target "BuildCompileTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "BuildCompile" depends on it):
+Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+Done building target "BuildCompileTraverse" in project "D3D9 Overlay ImGui.vcxproj".
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "ResolveReferences" skipped. Previously built successfully.
+Target "BeforeClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_ClCompile" depends on it):
+Done building target "BeforeClCompile" in project "D3D9 Overlay ImGui.vcxproj".
+Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
+Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+Target "ComputeCLInputPDBName" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_ClCompile" depends on it):
+Done building target "ComputeCLInputPDBName" in project "D3D9 Overlay ImGui.vcxproj".
+Target "ResolveReferences" skipped. Previously built successfully.
+Target "FindReferenceAssembliesForReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ComputeReferenceCLInput" depends on it):
+Done building target "FindReferenceAssembliesForReferences" in project "D3D9 Overlay ImGui.vcxproj".
+Target "GetReferencedVCProjectsInfo" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ComputeReferenceCLInput" depends on it):
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '').
+Done building target "GetReferencedVCProjectsInfo" in project "D3D9 Overlay ImGui.vcxproj".
+Target "ComputeReferenceCLInput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_ClCompile" depends on it):
+Task "WriteLinesToFile" skipped, due to false condition; ('@(_ReferenceOutputsToCopyLocally)'!='' and '$(DesignTimeBuild)' != 'true' and '$(TrackFileAccess)' == 'true') was evaluated as (''!='' and '' != 'true' and 'true' == 'true').
+Task "WriteLinesToFile" skipped, due to false condition; ('@(_ReferenceOutputsToCopyLocally)'!='' and '$(DesignTimeBuild)' != 'true' and '$(TrackFileAccess)' == 'true') was evaluated as (''!='' and '' != 'true' and 'true' == 'true').
+Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+Done building target "ComputeReferenceCLInput" in project "D3D9 Overlay ImGui.vcxproj".
+Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_ClCompile" depends on it):
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Drawing.cpp' != 'Drawing.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'imgui.cpp' != 'imgui.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'imgui_demo.cpp' != 'imgui_demo.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'imgui_draw.cpp' != 'imgui_draw.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'imgui_impl_dx9.cpp' != 'imgui_impl_dx9.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'imgui_impl_win32.cpp' != 'imgui_impl_win32.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'imgui_tables.cpp' != 'imgui_tables.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'imgui_widgets.cpp' != 'imgui_widgets.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'main.cpp' != 'main.cpp' and 'x64\Release\' == 'x64\Release\').
+Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'UI.cpp' != 'UI.cpp' and 'x64\Release\' == 'x64\Release\').
+Done building target "WarnCompileDuplicatedFilename" in project "D3D9 Overlay ImGui.vcxproj".
+Target "ComputeStdModulesCompileInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_ClCompile" depends on it):
+Task "GetLibraryModuleSources" skipped, due to false condition; ('@(LibraryManifests)' != '') was evaluated as ('' != '').
+Done building target "ComputeStdModulesCompileInputs" in project "D3D9 Overlay ImGui.vcxproj".
+Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_ClCompile" depends on it):
+Done building target "FixupCLCompileOptions" in project "D3D9 Overlay ImGui.vcxproj".
+Target "MakeDirsForCl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_ClCompile" depends on it):
+Task "MakeDir"
+Done executing task "MakeDir".
+Done building target "MakeDirsForCl" in project "D3D9 Overlay ImGui.vcxproj".
+Target "_SelectedFiles" skipped. Previously built successfully.
+Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
+Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+Target "ComputeStdModulesCompileInputs" skipped. Previously built successfully.
+Target "FixupCLCompileOptions" skipped. Previously built successfully.
+Target "SelectCustomBuild" skipped. Previously built successfully.
+Target "SetModuleDependencies" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(EnableCppModules)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
+Target "SelectClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "ClCompile" depends on it):
+Done building target "SelectClCompile" in project "D3D9 Overlay ImGui.vcxproj".
+Target "SelectAnalysisManifest" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
+Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Drawing.cpp;ImGui\imgui.cpp;ImGui\imgui_demo.cpp;...' != '' and 'false' == 'True').
+Target "ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (target "_ClCompile" depends on it):
+Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('ProgramDatabase' != '' and 'ProgramDatabase' != 'None' and 'ProgramDatabase' != 'OldStyle' and 'x64\Release\vc143.pdb' != '' and !Exists(x64\Release\vc143.pdb)).
+Task "MultiToolTask" skipped, due to false condition; ('%(ClCompile.CompilerIteration)' == 'Modules') was evaluated as ('' == 'Modules').
+Task "MultiToolTask" skipped, due to false condition; ('%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' == 'true') was evaluated as ('' == '' and 'false' == 'true').
+Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and '' == '' and 'false' != 'true').
+Using "CL" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+Task "CL"
+  Read Tracking Logs:
+  	x64\Release\D3D9 Ove.090d4ef2.tlog\CL.read.1.tlog
+  Outputs for C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\DRAWING.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\IMGUI\IMGUI.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\IMGUI\IMGUI_DEMO.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\IMGUI\IMGUI_DRAW.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\IMGUI\IMGUI_IMPL_DX9.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\IMGUI\IMGUI_IMPL_WIN32.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\IMGUI\IMGUI_TABLES.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\IMGUI\IMGUI_WIDGETS.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\MAIN.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\UI.CPP:
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\DRAWING.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\IMGUI.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\IMGUI_DEMO.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\IMGUI_DRAW.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\IMGUI_IMPL_DX9.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\IMGUI_IMPL_WIN32.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\IMGUI_TABLES.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\IMGUI_WIDGETS.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\MAIN.OBJ
+  	C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\X64\RELEASE\UI.OBJ
+  Drawing.cpp will be compiled because it was not found in the tracking log.
+  UI.cpp will be compiled because it was not found in the tracking log.
+  main.cpp will be compiled because it was not found in the tracking log.
+  No output for C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\DRAWING.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\MAIN.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\UI.CPP was found in the tracking log; source compilation required.
+  Write Tracking Logs:
+  	x64\Release\D3D9 Ove.090d4ef2.tlog\CL.write.1.tlog
+  Environment Variables passed to tool:
+    VS_UNICODE_OUTPUT=1648
+    SARIF_OUTPUT_PIPE=1660
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\CL.exe /c /IInclude /Zi /nologo /W3 /WX- /diagnostics:column /sdl /O2 /Oi /GL /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Release\\" /Fd"x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:queue Drawing.cpp main.cpp UI.cpp
+  Tracking command:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\x64\Release\D3D9 Ove.090d4ef2.tlog" /r "C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\DRAWING.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\MAIN.CPP|C:\MY\DEV\CROSSHAIR\TEMP\D3D9-OVERLAY-IMGUI\SOURCE\D3D9 OVERLAY IMGUI\UI.CPP" /b MSBuildConsole_CancelEvent27832301b2894591b5aac1948ea556a1  /c "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.39.33519\bin\HostX86\x64\CL.exe"  /c /IInclude /Zi /nologo /W3 /WX- /diagnostics:column /sdl /O2 /Oi /GL /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Release\\" /Fd"x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:queue Drawing.cpp main.cpp UI.cpp
+  Drawing.cpp
+  main.cpp
+  Sarif: {"ruleId":"C1083","level":"error","message":{"text":"Cannot open include file: 'd3dx9.h': No such file or directory"},"analysisTarget":{"uri":"file:///C:/My/Dev/crosshair/temp/D3D9-Overlay-ImGui/Source/D3D9 Overlay ImGui/Drawing.cpp"},"locations":[{"physicalLocation":{"artifactLocation":{"uri":"file:///C:/My/Dev/crosshair/temp/D3D9-Overlay-ImGui/Source/D3D9 Overlay ImGui/pch.h"},"region":{"startLine":10,"startColumn":10}}}]}
+C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\pch.h(10,10): error C1083: Cannot open include file: 'd3dx9.h': No such file or directory [C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj]
+  (compiling source file 'Drawing.cpp')
+  
+  Sarif: {"ruleId":"C1083","level":"error","message":{"text":"Cannot open include file: 'd3dx9.h': No such file or directory"},"analysisTarget":{"uri":"file:///C:/My/Dev/crosshair/temp/D3D9-Overlay-ImGui/Source/D3D9 Overlay ImGui/main.cpp"},"locations":[{"physicalLocation":{"artifactLocation":{"uri":"file:///C:/My/Dev/crosshair/temp/D3D9-Overlay-ImGui/Source/D3D9 Overlay ImGui/pch.h"},"region":{"startLine":10,"startColumn":10}}}]}
+C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\pch.h(10,10): error C1083: Cannot open include file: 'd3dx9.h': No such file or directory [C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj]
+  (compiling source file 'main.cpp')
+  
+  UI.cpp
+  Sarif: {"ruleId":"C1083","level":"error","message":{"text":"Cannot open include file: 'd3dx9.h': No such file or directory"},"analysisTarget":{"uri":"file:///C:/My/Dev/crosshair/temp/D3D9-Overlay-ImGui/Source/D3D9 Overlay ImGui/UI.cpp"},"locations":[{"physicalLocation":{"artifactLocation":{"uri":"file:///C:/My/Dev/crosshair/temp/D3D9-Overlay-ImGui/Source/D3D9 Overlay ImGui/pch.h"},"region":{"startLine":10,"startColumn":10}}}]}
+C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\pch.h(10,10): error C1083: Cannot open include file: 'd3dx9.h': No such file or directory [C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj]
+  (compiling source file 'UI.cpp')
+  
+  The command exited with code 2.
+Done executing task "CL" -- FAILED.
+Done building target "ClCompile" in project "D3D9 Overlay ImGui.vcxproj" -- FAILED.
+Done Building Project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (default targets) -- FAILED.
+Done executing task "MSBuild" -- FAILED.
+Done building target "Build" in project "D3D9 Overlay ImGui.sln" -- FAILED.
+Done Building Project "C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui.sln" (default target) (1) ->
+"C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj" (default target) (2) ->
+(ClCompile target) -> 
+  C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\pch.h(10,10): error C1083: Cannot open include file: 'd3dx9.h': No such file or directory [C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj]
+  C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\pch.h(10,10): error C1083: Cannot open include file: 'd3dx9.h': No such file or directory [C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj]
+  C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\pch.h(10,10): error C1083: Cannot open include file: 'd3dx9.h': No such file or directory [C:\My\Dev\crosshair\temp\D3D9-Overlay-ImGui\Source\D3D9 Overlay ImGui\D3D9 Overlay ImGui.vcxproj]
+
+    0 Warning(s)
+    3 Error(s)
+
+Time Elapsed 00:00:01.12
