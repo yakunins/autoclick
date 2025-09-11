@@ -4,8 +4,6 @@
 #Include lib/interceptor/AutoHotInterception.ahk
 #Include lib/Log.ahk
 #Include lib/Jsons.ahk
-
-*^Esc:: ExitApp
 AHI := AutoHotInterception() ; https://github.com/evilC/AutoHotInterception
 
 keyboardId := 1
@@ -22,6 +20,7 @@ cfg := {
     overlayTimeout: 1000, ; suppress aiming and wheel scroll handling
     aimIdleTimeout: 1000, ; suppress aiming on RButton if no keyboard action in period
     wheelKeypressPeriod: 333, ; wheel to keypress period
+    exitHotkey: ["~^Esc"],
     debug: false,
 }
 if (cfg.debug)
@@ -96,6 +95,17 @@ Bind() {
     AHI.SubscribeMouseButton(mouseId, mouseCodes.%acts.fire%, false, HandleFire)
     AHI.SubscribeMouseButton(mouseId, mouseCodes.%acts.ads%, false, HandleADS)
     AHI.SubscribeMouseButton(mouseId, mouseCodes.Wheel, false, HandleWheel)
+
+    ; exit bindings
+    if (cfg.exitHotkey) {
+        if (IsArray(cfg.exitHotkey)) {
+            for key in cfg.exitHotkey {
+                Hotkey(key, (t) => ExitApp())
+            }
+        } else {
+            Hotkey(cfg.exitHotkey, (t) => ExitApp())
+        }
+    }
 }
 
 HandleOther(code, state) {
@@ -467,6 +477,10 @@ MapObject(obj, callback) {
         result.%p% := callback(v) ; append 'mapped' prop
     }
     return result
+}
+
+IsArray(val) {
+    return IsObject(val) && val is Array
 }
 
 Debug() {

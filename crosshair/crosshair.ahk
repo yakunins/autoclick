@@ -14,7 +14,7 @@ global cfg := {
     useMonitor: 1,
     pos: [50, 0], ; offset from center of the screen
     size: [64, 64],
-    exitHotkey: ["~^Esc Up"],
+    exitHotkey: ["~^Esc"],
     hideHotkey: ["~*RButton"],
     showHotkey: ["~*RButton Up"],
 }
