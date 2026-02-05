@@ -6,9 +6,9 @@
 #Include lib/Jsons.ahk
 AHI := AutoHotInterception() ; https://github.com/evilC/AutoHotInterception
 
-keyboardId := 1
+keyboardId := 2
 ; keyboardId := AHI.GetKeyboardId(0x046D, 0xC52B)
-mouseId := 11
+mouseId := 12
 ; mouseId := AHI.GetMouseId(0x3554, 0xF58E) ; vxe r1
 
 cfg := {
